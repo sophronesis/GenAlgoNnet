@@ -50,19 +50,14 @@ void population::readfromfile(bool mode, char * name)
 	std::string path;
 	std::ifstream finp;
 	char file[20];
-	char* file_ext = ".popl";
 	path += "data\\";
 
 	if (mode)
 		strcpy(file, name);
 	else
-	{
-		std::cout << "Enter file name(*" << file_ext << "): " << std::endl;
 		std::cin >> file;
-	}
-	path = (path + file) + file_ext;
+	path = (path + file);
 	finp.open(path);
-
 	if (finp)//reading
 	{
 		int temp;
@@ -94,7 +89,11 @@ void population::readfromfile(bool mode, char * name)
 		finp.close();
 	}
 	else
+	{
 		std::cout << std::endl << "File not found" << std::endl;
+		exit(1);
+	}
+		
 }
 void  population::writetofile(bool mode, char * name)
 {
@@ -112,17 +111,13 @@ void  population::writetofile(bool mode, char * name)
 	std::string path;
 	std::ofstream fout;
 	char file[20];
-	char* file_ext = ".popl";
 	path += "data\\";
 
 	if (mode)
 		strcpy(file, name);
 	else
-	{
-		std::cout << "Enter file name(*" << file_ext << "): " << std::endl;
 		std::cin >> file;
-	}
-	path = (path + file) + file_ext;
+	path = (path + file) ;
 	fout.open(path);
 
 	if (fout)//reading
@@ -149,5 +144,5 @@ void  population::writetofile(bool mode, char * name)
 		fout.close();
 	}
 	else
-		std::cout << std::endl << "File not found" << std::endl;
+		std::cout << std::endl << "Can't write population data to file" << std::endl;
 }

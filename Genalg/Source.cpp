@@ -90,9 +90,10 @@ int main(int argc, char ** argv)
 	population test_pop;
 	test_pop.init(settings.topology, settings.options, settings.mut_rate);
 	char n;
-	std::cout << "Read population from file(1) or generate (2):" << std::endl;
-	std::cin >> n;
-	if (n == '1') test_pop.readfromfile();
+	char file[20];
+	std::cout << "usage: r (for random initital population)\n       l [path/to/file] (load pretrained population)" << std::endl;
+	std::cin >> n >> file;
+	if (n == 'l') test_pop.readfromfile(true,file);
 	startscene(argc, argv, test_pop);
 	system("pause");
 	return 0;

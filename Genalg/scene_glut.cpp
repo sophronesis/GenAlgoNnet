@@ -130,7 +130,7 @@ void idle()
 	{
 		//exit + save population
 		dflt->finalize_log();
-		pop->writetofile(1, "output");
+		pop->writetofile(1, "output.popl");
 		exit(0);
 	}
 
