@@ -17,6 +17,7 @@ After all generations all agents will be saved in data/output.popl .
 Each agent have 2 neural networks inside
 * One choose one object from scene
 * Second make changes in speed and angle of agent
+
 In [data/settings.cfg](https://github.com/hardkun/GenAlgoNnet/blob/master/Genalg/data/settings.cfg) you can adjust parameters like:
 * Scene wight
 * Scene height
