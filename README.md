@@ -21,7 +21,7 @@ In [data/settings.cfg](https://github.com/hardkun/GenAlgoNnet/blob/master/Genalg
 * Scene wight
 * Scene height
 * Object render segments (number of lines in circle)
-  * for example 3 will make all objects appear as triangles, 4 as squares and so on.
+  * For example 3 will make all objects appear as triangles, 4 as squares and so on.
 * Generations
 * Tics per scene
 *	Population size
