@@ -96,6 +96,9 @@
     <ClInclude Include="scene.h" />
     <ClInclude Include="scene_glut.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="data\settings.cfg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
