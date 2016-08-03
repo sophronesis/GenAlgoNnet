@@ -3,18 +3,18 @@ This project is a toy example of using genetic algorithm in reinforcement learni
 Requirements:
 * Visual Studio 2013
 * glut
+
 # Quickstart
 Type 'r' for random initial parameters
 or
 Type 'l [path/to/file]' for loading population file from disk
-
 On each scene 3 agents will be chosen and they will compete for food
-After each scene informatin about agent competethion will be displayer in following format:
-'''
+After each scene information about agent competition will be displayer in following format:
+```
 [number of scene in population]| <agent 1 id> <- energy gathered| <agent 2 id> <- energy gathered| <agent 3 id> <- energy gathered|
-'''
+```
 Also after each generation will be displayed scoreboard with seperation of agents that will be present in next generation and that who will be replaced with crossover of genes 
-After all generations all agents will be saved in [data/output.popl]()
+After all generations all agents will be saved in [data/output.popl]
 # Implementation Details
 Each agent have 2 neural networks inside
 * One choose one object from scene
